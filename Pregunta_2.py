@@ -6,10 +6,10 @@ import numpy as np
 def funcion(x: float):
     return x**5 - 6*x**4 + 2*x**3 + 20*x**2 - 27*x + 10
 
-x = range(-5, 10)
+x = np.linspace(-5, 10, 100)
 
 plt.plot(x , [funcion(i) for i in x])
-plt.xlim(-10, 10)
+plt.xlim(0, 15)
 plt.ylim(-10, 10)
 plt.show()
 
